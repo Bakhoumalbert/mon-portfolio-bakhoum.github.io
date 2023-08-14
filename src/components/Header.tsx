@@ -1,30 +1,18 @@
-import React, { useEffect } from "react";
-import { NavLink } from "react-router-dom";
+import {  NavLink, useLocation } from 'react-router-dom'; // Supposons que vous utilisez react-router-dom pour la navigation
 
 export const Header = () => {
-  useEffect(() => {
-    const navLinks = document.querySelectorAll('.nav-link');
+  const location = useLocation();
 
-    navLinks.forEach(link => {
-      link.addEventListener('click', () => {
-        // Supprime la classe "active" de tous les liens
-        navLinks.forEach(navLink => {
-          navLink.classList.remove('active');
-        });
-
-        // Ajoute la classe "active" au lien cliqué
-        link.classList.add('active');
-      });
-    });
-  }, []);
-
+  const isActive = (pathname) => {
+    return location.pathname === pathname ? 'text-white p-1 md:p-2 bg-[#304CFD] rounded-2xl hover:text-white' : 'text-gray-500';
+  };
   return (
-    <nav className="relative w-full md:flex hidden h-20 p-4 bg-[#fff] text-[#5F6F81] rounded-t-full justify-center items-center">
-      <ul className="w-full p-2 text-[#5F6F81] text-xl flex justify-around mx-10">
+    <nav className="w-full h-24 px-10 md:px-20 bg-[#fff] text-[#5F6F81] border-b border-[#5F6F81] rounded-t-full flex justify-center items-center">
+      <ul className="w-full text-[#5F6F81] text-xl lg:text-2xl flex justify-around mx-10 sm:space-x-2 md:space-x-3 lg:space-x-4 items-center">
         <li>
           <NavLink
             to="/"
-            className="nav-link cursor-pointer hover:text-[#304CFD] nav-link"
+            className={`block nav-link cursor-pointer hover:text-[#304CFD] nav-link ${isActive('/')}`}
             // activeClassName="bg-blue-700 text-white"
             // exact
           >
@@ -32,17 +20,17 @@ export const Header = () => {
           </NavLink>
         </li>
         <li>
-          <NavLink className="nav-link cursor-pointer hover:text-[#304CFD] nav-link" to="/parcours">
+          <NavLink to="parcours" className={`block nav-link cursor-pointer hover:text-[#304CFD] nav-link ${isActive('/parcours')}`}>
             PARCOURS
           </NavLink>
         </li>
         <li>
-          <NavLink className="nav-link cursor-pointer hover:text-[#304CFD] nav-link" to="/projets">
+          <NavLink className={`block nav-link cursor-pointer hover:text-[#304CFD] nav-link ${isActive('/projets')}`} to="/projets">
             PROJETS
           </NavLink>
         </li>
         <li>
-          <NavLink className="nav-link cursor-pointer hover:text-[#304CFD] nav-link" to="/contact">
+          <NavLink className={`block nav-link cursor-pointer hover:text-[#304CFD] nav-link ${isActive('/contact')}`} to="/contact">
             CONTACT
           </NavLink>
         </li>

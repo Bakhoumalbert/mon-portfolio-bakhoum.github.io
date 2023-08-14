@@ -7,7 +7,7 @@ export const LangueSwiper = () => {
   return (
       <Swiper
         effect='fade'
-        className='swiper-container'
+        className='swiper-container w-full'
         modules={[ Pagination, Autoplay]}
         spaceBetween={0}
         slidesPerView={1}
@@ -28,17 +28,7 @@ export const LangueSwiper = () => {
         </SwiperSlide>
         <SwiperSlide className="slide">
             <div className='slide-content py-6 flex justify-center'>
-            <img src="assets/fr3.png" alt="programmation" width={64} height={64} className="cursor-grab" />
-            </div>
-        </SwiperSlide>
-        <SwiperSlide className="slide">
-            <div className='slide-content py-6 flex justify-center'>
-            <img src="assets/fr3.png" alt="programmation" width={64} height={64} className="cursor-grab" />
-            </div>
-        </SwiperSlide>
-        <SwiperSlide className="slide">
-            <div className='slide-content py-6 flex justify-center'>
-            <img src="assets/fr3.png" alt="programmation" width={64} height={64} className="cursor-grab" />
+            <img src="assets/en3.png" alt="programmation" width={64} height={64} className="cursor-grab" />
             </div>
         </SwiperSlide>
       </Swiper>

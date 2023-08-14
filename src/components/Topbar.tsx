@@ -10,17 +10,17 @@ export const Topbar = () => {
         setNav(!nav);
     };
     return (
-    <div>
-        <div className="relative flex justify-end">
+    <div className="w-full ">
+        <div className="relative md:flex hidden ">
             <Header   />
         </div>
         {
             nav ? (
-                <button onClick={handleNav} className='md:hidden flex fixed z-40 top-0 right-0 w-16 h-14  bg-white text-lg text-[#304CFD] border rounded-tl-3xl rounded-br-3xl rounded-bl-3xl justify-center items-center'>Close</button>
-                // <AiOutlineClose size={30} className="m-2 cursor-pointer" />
-                )
-              :
-              <button onClick={handleNav} className='md:hidden flex fixed top-0 right-0 z-40 w-16 h-14 bg-[#304CFD] text-white border rounded-tl-3xl rounded-br-3xl rounded-bl-3xl justify-center items-center'>Menu</button>
+            <button onClick={handleNav} className='md:hidden flex fixed top-0 right-0 z-40 w-16 h-14  bg-white text-lg text-[#304CFD] border rounded-tl-3xl rounded-br-3xl rounded-bl-3xl justify-center items-center'>Close</button>
+            // <AiOutlineClose size={30} className="m-2 cursor-pointer" />
+            )
+            :
+            <button onClick={handleNav} className='md:hidden flex fixed top-0 right-0 z-40 w-16 h-14 bg-[#304CFD] text-lg text-white border rounded-tl-3xl rounded-br-3xl rounded-bl-3xl justify-center items-center'>Menu</button>
         }
         <div onClick={handleNav} className="md:hidden z-10 mx-4 bg-gray-100">
             {nav ? (

@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom"
 
 export const Navbar = () => {
   return (
-    <nav className="w-full h-screen fixed bg-blue-600 bg-opacity-100 text-[#FFFFFFB3] flex flex-col justify-center space-y-4 items-center">
+    <nav className="w-full h-screen fixed bg-blue-600 bg-opacity-100 text-[#FFFFFFB3] flex flex-col justify-center items-center px-20">
           <NavLink className="mr-5 font-bold cursor-pointer" to="/">
             PRESENTATION
           </NavLink>

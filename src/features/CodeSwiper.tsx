@@ -10,12 +10,12 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Disponibilite } from "./codes/Disponibilite";
-import { Type_poste } from "./codes/Type_poste";
+import { Disponibilite } from "../components/presentation/codes/Disponibilite";
+import { Type_poste } from "../components/presentation/codes/Type_poste";
 import { GrPrevious, GrNext } from "react-icons/gr";
 export const CodeSwiper = () => {
   return (
-    <div>
+    <div className="w-auto">
       <Swiper
         // effect='fade'
         className="flex justify-center items-center"
@@ -58,7 +58,7 @@ export const CodeSwiper = () => {
           </div>
         </SwiperSlide>
       </Swiper>
-      <div className="flex justify-between px-36 pt-2">
+      <div className="flex justify-between md:px-36 pt-2">
         <button className="custom-prev-button bg-gray-200 rounded-full p-2 items-center">
             <GrPrevious size={30} className="text-white" />
         </button>

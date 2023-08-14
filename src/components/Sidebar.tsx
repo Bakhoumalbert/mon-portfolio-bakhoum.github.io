@@ -5,11 +5,11 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { AiOutlineDownload } from "react-icons/ai";
 export const Sidebar = () => {
   return (
-    <div className="w-full h-max md:sticky top-0 bg-[#F5F8F9] flex flex-col md:rounded-l-3xl md:rounded-tr-none rounded-t-3xl rounded-3xl space-x-4 p-2">
+    <div className="w-full h-max md:sticky top-0 bg-[#F5F8F9] flex flex-col md:rounded-l-3xl md:rounded-tr-none rounded-t-3xl rounded-3xl space-x-4 px-4">
       <div className="flex flex-col md:p-2 p-4 space-x-4">
         <div className="flex pt-6 flex-col justify-center">
           <img
-            className="w-48 md:mt-6 md:w-60 z-10 rounded-2xl h-full mx-auto"
+            className="max-w-[300px] md:mt-6 md:max-w-60 z-10 rounded-2xl h-full mx-auto"
             src="assets/profil1.jpg"
             alt="profilpic"
             width="584"
@@ -45,19 +45,19 @@ export const Sidebar = () => {
             </div>
             <div className="flex justify-start">
                 <ul className="flex flex-col md:text-sm space-y-1">
-                  <li className="flex flex-row space-x-4 items-center">
+                  <li className="flex flex-row space-x-2 md:space-x-4 items-center">
                     <FiCalendar />
                     <a href="#" className="cursor-pointer">
                       21 Janvier, 2002
                     </a>
                   </li>
-                  <li className="flex flex-row space-x-4 items-center">
+                  <li className="flex flex-row space-x-2 md:space-x-4 items-center">
                     <TfiLocationPin />
                     <a href="#" className="cursor-pointer">
                       Mbour, Gouye Mouride
                     </a>
                   </li>
-                  <li className="flex flex-row space-x-4 items-center">
+                  <li className="flex flex-row space-x-2 md:space-x-4 items-center">
                     <FiMail />
                     <a
                       href="mailto:bakhoum.albert@uam.edu.sn"
@@ -66,7 +66,7 @@ export const Sidebar = () => {
                       bakhoum.albert@uam.edu.sn
                     </a>
                   </li>
-                  <li className="flex flex-row space-x-4 items-center">
+                  <li className="flex flex-row space-x-2 md:space-x-4 items-center">
                     <BsPhone />
                     <a href="tel:+221774132175" className="cursor-pointer">
                       774132175
