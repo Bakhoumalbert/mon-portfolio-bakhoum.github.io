@@ -12,7 +12,7 @@ export const Header = () => {
         <li>
           <NavLink
             to="/"
-            className={`block nav-link cursor-pointer hover:text-[#304CFD] nav-link ${isActive('/')}`}
+            className={`block cursor-pointer hover:text-[#304CFD] ${isActive('/')}`}
             // activeClassName="bg-blue-700 text-white"
             // exact
           >
@@ -20,17 +20,17 @@ export const Header = () => {
           </NavLink>
         </li>
         <li>
-          <NavLink to="parcours" className={`block nav-link cursor-pointer hover:text-[#304CFD] nav-link ${isActive('/parcours')}`}>
+          <NavLink to="parcours" className={`block cursor-pointer hover:text-[#304CFD] ${isActive('/parcours')}`}>
             PARCOURS
           </NavLink>
         </li>
         <li>
-          <NavLink className={`block nav-link cursor-pointer hover:text-[#304CFD] nav-link ${isActive('/projets')}`} to="/projets">
+          <NavLink className={`block cursor-pointer hover:text-[#304CFD] ${isActive('/projets')}`} to="/projets">
             PROJETS
           </NavLink>
         </li>
         <li>
-          <NavLink className={`block nav-link cursor-pointer hover:text-[#304CFD] nav-link ${isActive('/contact')}`} to="/contact">
+          <NavLink className={`block cursor-pointer hover:text-[#304CFD] ${isActive('/contact')}`} to="/contact">
             CONTACT
           </NavLink>
         </li>

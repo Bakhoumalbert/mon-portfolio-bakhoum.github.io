@@ -9,7 +9,7 @@ export const Sidebar = () => {
       <div className="flex flex-col md:p-2 p-4 space-x-4">
         <div className="flex pt-6 flex-col justify-center">
           <img
-            className="max-w-[300px] md:mt-6 md:max-w-60 z-10 rounded-2xl h-full mx-auto"
+            className="max-w-[250px] md:mt-6 md:max-w-60 z-10 rounded-2xl h-full mx-auto m-4"
             src="assets/profil1.jpg"
             alt="profilpic"
             width="584"
@@ -78,7 +78,7 @@ export const Sidebar = () => {
       <div className="flex justify-center pb-4">
       <a
         className="bg-[#304CFD] text-white cursor-pointer py-4 px-8 rounded-2xl flex flex-row items-center space-x-2"
-        href="CV GUIHOT.pdf"
+        href="Mon CV pro.pdf"
         >
         <AiOutlineDownload size={20} />
         <p>Télécharger CV</p>
