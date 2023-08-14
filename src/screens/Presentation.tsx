@@ -8,12 +8,12 @@ export const Presentation = () => {
 
 
   return (
-    <div className="py-4 pr-6 sm:text-sm md:text-base lg:text-xl">
-      <div className="relative left-0 flex flex-col py-2 space-y-6">
+    <div className="py-4 pl-3 pr-6 sm:text-sm md:text-base lg:text-xl">
+      <div className="flex flex-col py-2 space-y-6">
         <h1 className="text-3xl font-ttl">Qui suis-je ?</h1>
         <UnderlineTitle />
       </div>
-      <div className="p-2 text-[#5F6F81] text-sm sm:text-base md:text-xl font-par font-medium text-justify flex flex-col justify-center space-y-4">
+      <div className="p-3 text-[#5F6F81] text-sm sm:text-base md:text-xl font-par font-medium text-justify flex flex-col justify-center space-y-4">
       <p className="">
         Je me nomme <strong>Albert Sandokh Bakhoum. </strong>Etudiant en deuxième année à l’<strong>Ecole des Sciences et Technique de l’Ingénierie (ESTI)</strong> de l’<strong>Université Amadou Mahtar Mbow de Dakar (UAM).</strong>
       </p>
@@ -136,13 +136,13 @@ export const Presentation = () => {
         <Domaine />
         <Domaine />
       </div> */}
-      <div className="flex flex-col space-y-10">
+      <div className="flex flex-col space-y-10 p3">
       <div className="pb-4 space-y-6">
-        <h2 className="text-3xl">
+        <h2 className="sm:text-2xl  text-3xl">
           Recherche de stage : <h2 className="text-green-700"> En Administration et sécurité réseau / Développement logicielle</h2>
         </h2>
         <div className="flex justify-center">
-          <div className="w-[200px] md:w-[780px]">
+          <div className="w-[500px] md:w-[780px]">
           <CodeSwiper />
           </div>
         </div>
@@ -162,7 +162,6 @@ export const Presentation = () => {
         <div className="flex flex-wrap justify-between text-center">
           <img className="border border-collapse rounded-2xl cursor-grab" src="assets/dev.png" alt="programmation" />
           <img className="border border-collapse rounded-2xl cursor-grab" src="assets/football.png" alt="football" width={128} height={118} />
-          <img className="border border-collapse rounded-2xl cursor-grab" src="assets/dev.png" alt="programmation" />
         </div>
       </div>
       </div>

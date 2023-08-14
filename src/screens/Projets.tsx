@@ -24,6 +24,8 @@ const Projets: React.FC<ProjetProps> = () => {
             title={admin.title}
             description={admin.description}
             image={admin.image}
+            datetm={admin.datetm}
+            mois={admin.mois}
             />
             ))}
           
@@ -39,6 +41,8 @@ const Projets: React.FC<ProjetProps> = () => {
             title={infEmb.title}
             description={infEmb.description}
             image={infEmb.image}
+            datetm={infEmb.datetm}
+            mois={infEmb.mois}
             />
             ))}
         </div>
