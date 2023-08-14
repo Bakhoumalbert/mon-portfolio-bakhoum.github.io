@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "monportfoliobakhoum"
-  }
+    "default": "monportfoliobakhoum",
+    "staging": "monportfoliobakhoum"
+  },
+  "targets": {},
+  "etags": {}
 }

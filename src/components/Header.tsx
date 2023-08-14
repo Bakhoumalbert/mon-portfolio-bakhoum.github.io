@@ -3,7 +3,7 @@ import {  NavLink, useLocation } from 'react-router-dom'; // Supposons que vous 
 export const Header = () => {
   const location = useLocation();
 
-  const isActive = (pathname) => {
+  const isActive = (pathname: string) => {
     return location.pathname === pathname ? 'text-white p-1 md:p-2 bg-[#304CFD] rounded-2xl hover:text-white' : 'text-gray-500';
   };
   return (
