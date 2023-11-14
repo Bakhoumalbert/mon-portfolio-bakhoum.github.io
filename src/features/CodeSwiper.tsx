@@ -58,7 +58,7 @@ export const CodeSwiper = () => {
           </div>
         </SwiperSlide>
       </Swiper>
-      <div className="flex justify-between md:px-36 pt-2">
+      <div className="flex justify-between md:px-32 pt-2">
         <button className="custom-prev-button bg-gray-200 rounded-full p-2 items-center">
             <GrPrevious size={30} className="text-white" />
         </button>

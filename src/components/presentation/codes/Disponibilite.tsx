@@ -3,7 +3,7 @@ export const Disponibilite = () => {
   return (
     <div className="py-4 md:pl-10 bg-black overflow-x-auto rounded-xl leading-5 scroll-mx-2 custom-scrollbar flex justify-center items-center">
       {/* <h4 className="title text-3xl">Slide 2</h4> */}
-      <p className="text-[15px] text-white whitespace-nowrap">
+      <p className="text-[12px] text-white whitespace-nowrap pl-4">
         <span className="">
           <span className="text-cyan-500 font-bold pl-2">def</span>{" "}
           <span className="text-green-500">disponibilité</span>(

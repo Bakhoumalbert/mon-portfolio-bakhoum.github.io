@@ -10,8 +10,8 @@ export const Topbar = () => {
         setNav(!nav);
     };
     return (
-    <div className="w-full ">
-        <div className="relative md:flex hidden ">
+    <div className="w-full">
+        <div className="relative md:flex hidden">
             <Header   />
         </div>
         {

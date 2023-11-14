@@ -7,7 +7,7 @@ export const Header = () => {
     return location.pathname === pathname ? 'text-white p-1 md:p-2 bg-[#304CFD] rounded-2xl hover:text-white' : 'text-gray-500';
   };
   return (
-    <nav className="w-full h-24 px-10 md:px-20 bg-[#fff] text-[#5F6F81] border-b border-[#5F6F81] rounded-t-full flex justify-center items-center">
+    <nav className="w-full h-20 px-10 bg-[#fff] text-[#5F6F81] border-b border-[#5F6F81] rounded-t-full flex justify-center items-center">
       <ul className="w-full text-[#5F6F81] text-xl lg:text-2xl flex justify-around mx-10 sm:space-x-2 md:space-x-3 lg:space-x-4 items-center">
         <li>
           <NavLink

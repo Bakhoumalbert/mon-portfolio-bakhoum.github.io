@@ -1,19 +1,12 @@
+import { ProjetFiedType } from "../../types/projets-field-type"
 
-interface featurecardInterface {
-  title: string;
-  description: string;
-  image: string;
-  className?: string;
-  datetm?: string;
-  mois?: string;
-}
 
-export const Mesprojets: React.FC<featurecardInterface> = ({title,description, image,className,datetm, mois}) => {
+export const Mesprojets = ({title,description, image,className,year, mois}:ProjetFiedType) => {
   return (
     <div className="h-auto w-auto flex flex-col ">
       <span className="relative top-[68px] w-1/3 text-white bg-orange-400 rounded-tl-2xl rounded-br-2xl">
         <span className="py-2 flex flex-col justify-center items-center">
-        <h2 className="text-white text-xl">{datetm}</h2>
+        <h2 className="text-white text-xl">{year}</h2>
         <p className="truncate">{mois}</p>
         </span>
       </span>

@@ -3,7 +3,7 @@ import "./custom_scrollbar.css";
 export const Type_poste = () => {
   return (
     <div className=" p-6 bg-black overflow-x-auto rounded-xl leading-5 scroll-mx-2 custom-scrollbar flex justify-center items-center">
-      <p className="py-4 text-[12px] md:text-[15px] whitespace-nowrap flex flex-col justify-center">
+      <p className="py-4 text-[11px] md:text-[15px] whitespace-nowrap flex flex-col justify-center pl-4">
           <span>
           <span className="text-cyan-500 font-bold pl-4">def</span>{" "}
           <span className="text-green-500">type_poste</span>(

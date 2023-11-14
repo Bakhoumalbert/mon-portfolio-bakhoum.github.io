@@ -7,7 +7,7 @@ export const Navbar = () => {
     return location.pathname === pathname ? 'text-blue-700 mr-5 font-bold rounded-xl  bg-white p-1 hover:text-blue-950' : 'text-white';
   };
   return (
-    <nav className="w-full h-screen fixed bg-blue-600 bg-opacity-100 text-[#FFFFFFB3] flex flex-col justify-center items-center px-20">
+    <nav className="w-screen h-screen fixed bg-blue-600 bg-opacity-100 text-[#FFFFFFB3] flex flex-col justify-center items-center px-20">
           <NavLink className={`mr-5 font-bold cursor-pointer hover:text-white ${isActive("/")}`} to="/">
             PRESENTATION
           </NavLink>
